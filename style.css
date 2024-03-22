@@ -9,23 +9,25 @@ body {
 }
 
 
-
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+}
 
 .topnav {
- 
+
     position: static;
     top: 0%;
- margin: center;
+ margin: auto;
     background-color: aliceblue;
     text-align: center;
    
     margin-top: 3vh; /* Uppdaterad enhet för responsivitet */
    
    
-    /* Centrera horisontellt */
   
     width: 95%; /* Uppdaterad enhet för responsivitet */
-   
+     box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.884); /* Shadow properties */
     height: 15vh; /* Uppdaterad enhet för responsivitet */
     border: 1vh solid #3979a1; /* Uppdaterad enhet för responsivitet */
     padding: 2vh; /* Uppdaterad enhet för responsivitet */
@@ -44,10 +46,13 @@ body {
       text-align: left;
       width: 100%; /* Uppdaterad enhet för responsivitet */
       max-width: 900px; /* Max bredd */
-      height: auto; /* Automatisk höjd */
+      height: auto; /* Automatisk höjd */ 
+     
       border: 10px solid rgb(68, 119, 228); 
+    
       padding: 5vh; /* Uppdaterad enhet för responsivitet */
-      margin: 5vh auto; /* Centrera vertikalt och horisontellt */
+      margin: 5vh auto; /* Centrera vertikalt och horisontellt */ 
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
   }
        
     
@@ -64,6 +69,9 @@ body {
  
      
     .active {
+      font-family: 'IBM Plex Sans', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -103,6 +111,7 @@ body {
            height: 70vh; 
            margin: 100px;
             background-position: center;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
         
            }
 
@@ -120,59 +129,58 @@ body {
         }
 
 
-        /* Mediaförfrågningar för responsivitet */
-        @media only screen and (max-width: 500px) { 
-          /* Stilar som tillämpas när skärmbredden är högst 500px */
-          
-          .body {
-            background-position: center;
-            background-size: cover;
-            width: 100%; /* Anpassa bredden för mindre skärmar */
-            height: auto; /* Anpassa höjden för mindre skärmar */
-          }
-        
-          .topnav {
-            width: 100%; /* Anpassa bredden för mindre skärmar */
-            max-width: none; /* Återställ maxbredd */
-            height: auto; /* Automatisk höjd */
-            margin-top: 5vh; /* Uppdaterad enhet för responsivitet */
-          }
+/* Mediaförfrågningar för responsivitet */
+@media only screen and (max-width: 500px) { 
+  /* Stilar som tillämpas när skärmbredden är högst 500px */
+  
+  .body {
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* Anpassa bredden för mindre skärmar */
+    height: auto; /* Anpassa höjden för mindre skärmar */
+  }
 
-          
-        
-          .home {
-            width: 90%; /* Anpassa bredden för mindre skärmar */
-            max-width: none; /* Återställ maxbredd */
-            margin: 5vh auto; /* Centrera vertikalt och horisontellt */
-          }
-        
-          .intro {
-            margin-top: 10vh; /* Uppdaterad enhet för responsivitet */
-          }
-          .page {
-            background-color: white;
-            height: 70vh; 
-            margin-left: 20px; /* Adjusted margin for better visibility */
-          
-            background-position: center;
-            width: 100%; /* Adjusted width for better visibility */
-            margin-left: 20 auto; /* Centering horizontally */
-          }
+  .topnav {
+    width: 100%; /* Anpassa bredden för mindre skärmar */
+    max-width: none; /* Återställ maxbredd */
+    height: auto; /* Automatisk höjd */
+    margin-top: 5vh; /* Uppdaterad enhet för responsivitet */
+  }
 
-          footer { 
-            margin: 2vh;
-           
-          }
-        
-        
-        @media only screen and (max-width: 600px) { 
-          /* Stilar som tillämpas när skärmbredden är högst 600px */
+  .home {
+    width: 90%; /* Anpassa bredden för mindre skärmar */
+    max-width: none; /* Återställ maxbredd */
+    margin: 5vh auto; /* Centrera vertikalt och horisontellt */
+  }
 
-           .topnav {
-            padding: 1vh; /* Uppdaterad enhet för responsivitet */
-          }
+  .intro {
+    margin-top: 10vh; /* Uppdaterad enhet för responsivitet */
+  }
+  
+  .page {
+    background-color: white;
+    height: 70vh; 
+    margin-left: 20px; /* Adjusted margin for better visibility */
+    background-position: center;
+    width: 100%; /* Adjusted width for better visibility */
+    margin-left: 20 auto; /* Centering horizontally */
+  }
+
+  footer { 
+    margin: 2vh;
+  }
+}
+
         
-          .active {
-            font-size: 1.5vh; /* Uppdaterad enhet för responsivitet */
-            padding: 1vh 2vh; /* Uppdaterad enhet för responsivitet */
+          @media only screen and (max-width: 600px) {
+            /* Stilar som tillämpas när skärmbredden är högst 600px */
+          
+            .topnav {
+              padding: 1vh; /* Uppdaterad enhet för responsivitet */
+            }
+          
+            .active {
+              font-size: 1.5vh; /* Uppdaterad enhet för responsivitet */
+              padding: 1vh 2vh; /* Uppdaterad enhet för responsivitet */
+            }
           }
