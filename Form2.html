@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="description" content="Blomstermålabladets formulär, Vinn en T-shirt!">
+	<meta name="keywords" content="T-shirt, Formulär">
+	<title>Blomstermålabladet formulär</title>
+	
+	<style>
+body {
+    background-image: url("back3.jpg");
+}
+
+.topnav {
+    text-align: center;
+    border-radius: 10px;
+     position: sticky;
+    width: 1000px;
+    height: 180px;
+    border: 10px solid rgb(68, 119, 228);
+    padding: 20px;
+    margin: 0 auto; /* Center the element */
+   
+}
+
+div {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: left;
+    width: 800px;
+    height: 1000px;
+    border: 15px solid rgb(68, 119, 228);
+    padding: 50px;
+    margin: 50px auto; /* Center the element */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    
+    div {
+        width: 100%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Center and provide some spacing */
+        position: static;
+
+    
+    }
+    .topnav {
+        width: 80vw;
+    height: 50vw;
+    }
+
+    .active {
+        position:static
+        /*vet inte hur jag ska fixa knapparna i topnav ???!!!*/ 
+    }
+    
+    
+    
+
+@media screen and (max-width: 1200px) {
+    .topnav {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 10px;
+        position: sticky;
+    }
+    
+    .active {
+        position: static;
+    }
+
+    div {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* You can further adjust styles for smaller screens */
+}
+	 
+	.button {
+	  
+	   width: 220px;
+	   height: 50px;
+	   border: none;
+	   outline: none;
+	   color: #fff;
+	   background: #148ebe;
+	   cursor: pointer;
+	   position: static;
+	   border-radius: 10px;
+
+       
+	   
+	}
+	.button:hover {
+	   background-color: rgb(83, 199, 228);
+	}
+	h1 {
+	 color: #0074d9;
+	 font-size: 46px;
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+	.T-shirt {
+	 font-size: large;
+	 color: #023f57;
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+	.active {
+	 font-size: 20px;
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	 border: 4px  #010508;
+	 border-radius: 10px;
+	 padding: 10px 20px;
+	 color: #ffffff; 
+	 background-color: #148ebe;
+	 text-decoration: none;
+	padding: 14px 16px;
+        position: static;
+	           
+	 }
+	 textarea {
+	height: 100px; 
+	   width: 300px; 
+	 }
+
+	 fieldset {
+	   color: #022c3d;
+
+	 }
+
+
+
+
+</style>
+</head>
+<body>
+
+
+	<div class="topnav">
+		<h1>Blomstermålabladet</h1><a class="active" href="#home">Hem</a> <a class=
+		"active" href="#news">Nyheter</a> <a class="active" href="#news">Ekonomi</a>
+		<a class="active" href="#news">Sport</a> <a class="active" href=
+		"#news">Väder</a> <a class="active" href="#contact">Kontakta oss</a>
+		<a class="active" href="#about">Om oss</a>	
+
+	</div>		
+	<div>
+		<form action="http://webshare.mah.se/tszagh/response.php" method="get">
+		<fieldset>
+      <legend>Kontaktuppgifter:</legend>
+      <label for="namn">Namn:</label> <input id="namn" name="namn" type="text" required ><br><br>
+				<label for="ålder">Ålder:</label> <input id="ålder" name="ålder" type="number" required><br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Hur ofta besöker du Blomstermålabladet?</legend> <input id=
+				"besök_1" name="besök_ofta" type="radio" value="Varje dag"> <label for=
+				"besök_1">Varje dag</label><br>
+				<input id="besök_2" name="besök_ofta" type="radio" value="Varannan dag">
+				<label for="besök_2">Varannan dag</label><br>
+				<input id="besök_3" name="besök_ofta" type="radio" value="Varje vecka">
+				<label for="besök_3">Varje vecka</label><br>
+				<br>
+				<p>Vilka delar av Blomstermålabladet brukar du besöka?</p><input id=
+				"besök_nyheter" name="besök_nyheter" type="checkbox" value="Nyheter">
+				<label for="besök_nyheter">Nyheter</label><br>
+				<input id="besök_utrikes" name="utrikes" type="checkbox" value=
+				"Utrikes"> <label for="besök_utrikes">Utrikes</label><br>
+				<input id="besök_inrikes" name="besök_inrikes" type="checkbox" value=
+				"Inrikes"> <label for="besök_inrikes">Inrikes</label><br>
+				<input id="besök_sport" name="besök_sport" type="checkbox" value="Sport">
+				<label for="besök_sport">Sport</label><br>
+				<input id="besök_skvaller" name="besök_skvaller" type="checkbox" value=
+				"Skvaller"> <label for="besök_skvaller">Skvaller</label><br>
+				<input id="besök_väder" name="besök_väder" type="checkbox" value="Väder">
+				<label for="besök_väder">Väder</label><br>
+				<input id="besök_övrigt" name="besök_övrigt" type="checkbox" value="Övrigt">
+				<label for="besök_övrigt">Övrigt</label><br>
+			</fieldset><br>
+			<br>
+			<fieldset>
+				<legend class="T-shirt">Vinn en T-shirt!</legend> <em>Vad är det bästa med
+				Blomstermålabladet?</em><br>
+				<textarea maxlength="50" name="bästa" placeholder=
+				"Max 50 ord" required></textarea><br>
+				<br>
+				<em>Vad är det sämsta med Blomstermålabladet?</em><br>
+				<textarea maxlength="50" name="sämsta" placeholder=
+				"Max 50 ord" required></textarea><br>
+				<br>
+				<label for="email">E-post:</label> 
+        <input type="email" name="E-post" id="email" placeholder=
+				"anton@mau.se" required><br>
+				<p></p><label for="storlek">Välj storlek:</label> <select id="storlek"
+				name="storlek">
+					<option value="">
+						Välj storlek
+					</option>
+					<option value="XS">
+						XS
+					</option>
+					<option value="S">
+						S
+					</option>
+					<option selected value="M">
+						M
+					</option>
+					<option value="L">
+						L
+					</option>
+					<option value="XL">
+						XL
+					</option>
+				</select>
+				<p></p>
+			</fieldset><br>
+			<br>
+			<input class="button" type="submit" value="Skicka"> <input class="button"
+			type="reset" value="Återställ">
+		</form>
+	</div>
+</body>
+</html>
