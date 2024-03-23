@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
 
     background-image: url("boat.JPG");
@@ -28,7 +31,7 @@ body {
   
     width: 95%; /* Uppdaterad enhet för responsivitet */
      box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.884); /* Shadow properties */
-    height: 15vh; /* Uppdaterad enhet för responsivitet */
+    height: 20vh; /* Uppdaterad enhet för responsivitet */
     border: 1vh solid #3979a1; /* Uppdaterad enhet för responsivitet */
     padding: 2vh; /* Uppdaterad enhet för responsivitet */
 }
@@ -41,18 +44,20 @@ body {
   }
 
      .home {
-      margin: center;
+        width: 100%; /* Uppdaterad enhet för responsivitet */
       background-color: white;
       text-align: left;
-      width: 100%; /* Uppdaterad enhet för responsivitet */
-      max-width: 900px; /* Max bredd */
+    
+      max-width: 100%; /* Max bredd */
       height: auto; /* Automatisk höjd */ 
      
-      border: 10px solid rgb(68, 119, 228); 
-    
-      padding: 5vh; /* Uppdaterad enhet för responsivitet */
-      margin: 5vh auto; /* Centrera vertikalt och horisontellt */ 
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
+       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
+  }
+
+ .arrowdown {
+  margin: 5vh auto;
+  margin-left: 95vh;
+
   }
        
     
@@ -104,9 +109,16 @@ body {
         position: sticky;
         top: 0;
       }
+
+      .profilpic {
+      margin-left: 45%;
+   
+      border: 5px solid #148ebe;
+        border-radius: 50%;
+      }
        
 
-        .page {
+        .certifications {
             background-color: white;
            height: 70vh; 
            margin: 100px;
@@ -114,9 +126,26 @@ body {
             box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
         
            }
-
+           .h1cert {
+            position: static;
+            text-align: center;
+            margin: 7vh auto; /* Center horizontally with top margin */
+            padding: 4px ; /* Increased padding for better spacing */
+            border: 8px solid #148ebe; /* Added 'solid' keyword and specified border color */
+            border-top-style: none;
+            border-radius: 5px; /* Rounded corners for a nicer look */
+            max-width: 400px; /* Limiting maximum width for better readability */
+            background-color: #f0f0f0; /* Light gray background color */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); / 
+           }
            .pdf {
             margin: 10px;
+            margin-left: 100px;
+           }
+
+            
+           .resumé{
+            
            }
 
         footer {

@@ -2,10 +2,10 @@
  
   .card {
     margin-top: 25vh;
-    margin-left: 35vh;
+    margin-left: 85% ;
     width: 190px;
     height: 254px;
-    background: #148ebe;
+    background: #1c6e8f;
     padding: 2rem 1.5rem;
     transition: box-shadow .3s ease, transform .2s ease;
    }
