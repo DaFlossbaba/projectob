@@ -6,36 +6,73 @@ body {
     background-image: url("boat.JPG");
     background-position: center;
     background-size: cover;
-    width: 98%; 
+    width: 100%; 
   height: 40%; 
     
 }
-
-
 @font-face {
   font-family: 'IBM Plex Sans';
   src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 }
 
+
+
 .topnav {
 
-    position: static;
-    top: 0%;
- margin: auto;
+ margin: 30px;
     background-color: aliceblue;
     text-align: center;
+    
    
+   justify-content: space-around;
     margin-top: 3vh; /* Uppdaterad enhet för responsivitet */
-   
-   
-  
     width: 95%; /* Uppdaterad enhet för responsivitet */
      box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.884); /* Shadow properties */
-    height: 20vh; /* Uppdaterad enhet för responsivitet */
+    height: 30vh; /* Uppdaterad enhet för responsivitet */
     border: 1vh solid #3979a1; /* Uppdaterad enhet för responsivitet */
     padding: 2vh; /* Uppdaterad enhet för responsivitet */
 }
     
+.active {    
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+    font-weight: 600;
+    padding: 1em ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+   margin-top: 20vh;
+    box-shadow: 0 0 0 0 black;
+    margin: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  flex: auto;
+    top: 0;
+    background-color: #148ebe;
+    color: white;
+  
+
+   
+    
+  }
+  
+  .active:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  };
+  
+  .active:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
      
      .name {
       position: static;
@@ -48,15 +85,29 @@ body {
       width: 100%; /* Uppdaterad enhet för responsivitet */
       background-color: white;
       text-align: left;
-    
       max-width: 100%; /* Max bredd */
-      height: auto; /* Automatisk höjd */ 
-     
+      height: auto; /* Automatisk höjd */
        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
   }
   .profilpic {
     margin: 9vh;
+    margin-right: 1px;
   }
+
+  .github img {
+ float: inline-end;
+    margin-top: 17px;
+    height: 85px; /* Minska höjden */
+    width: auto
+  }
+  
+  .facebook img {
+    float: inline-end;
+ 
+    height: 120px; /* Minska höjden */
+    width: auto
+  }
+
 
  .arrowdown {
   
@@ -76,44 +127,6 @@ body {
         margin-top: 14em;
      }
 
- 
-     
-    .active {
-      font-family: 'IBM Plex Sans', sans-serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      text-decoration: none;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background-color: #148ebe;
-        color: white;
-       
-        font-size: 17px;
-        font-weight: 600;
-        padding: 1em 2em;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        border: 1px solid black;
-        box-shadow: 0 0 0 0 black;
-        margin: 15px;
-        
-      }
-      
-      .active:hover {
-        transform: translateY(-4px) translateX(-2px);
-        box-shadow: 2px 5px 0 0 black;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      };
-      
-      .active:active {
-        transform: translateY(2px) translateX(1px);
-        box-shadow: 0 0 0 0 black;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-      }
 
       .profilpic {
       margin-left: 45%;
@@ -125,12 +138,18 @@ body {
 
         .certifications {
             background-color: white;
-           height: 70vh; 
-           margin: 100px;
+           height: 70vh;
+           width: 80%; 
+          margin-left: auto;
+          margin-right: auto;
             background-position: center;
             box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
+            flex-wrap: wrap;
         
            }
+         
+
+
            .h1cert {
             position: static;
             text-align: center;
@@ -143,80 +162,71 @@ body {
             background-color: #f0f0f0; /* Light gray background color */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); / 
            }
-           .pdf {
-            margin: 10px;
-            margin-left: 100px;
-           }
+         
+        .pdf {
+       
+            margin: 25px;
+            margin-top: 8vh;
+            width: 40vh;
+            height: 30vh;
+             flex-wrap: wrap; 
+             position: static;
+           
+        }
+
+      
+        
+           
 
             
            .resumé{
-            width: fit-content;
-            height: 70vh;
-            background-color: #f0f0f0;
+            max-width: 100%;
+            width: 100%;
+
+            height: auto;
+            background-color: #ffffff;
            }
 
         footer {
-            background-color: #3979a1;
-            width: 100%;
-            margin-bottom: 0px;
-            color: white;
+           background-color: #3979a1;
+           width: 100%;
+            height: 50px; 
+            
             padding: 15px;
             text-align: center;
+      
+            bottom: 0;
         }
 
 
-/* Mediaförfrågningar för responsivitet */
-@media only screen and (max-width: 500px) { 
-  /* Stilar som tillämpas när skärmbredden är högst 500px */
+
+
   
-  .body {
-    background-position: center;
-    background-size: cover;
-    width: 100%; /* Anpassa bredden för mindre skärmar */
-    height: auto; /* Anpassa höjden för mindre skärmar */
-  }
 
-  .topnav {
-    width: 100%; /* Anpassa bredden för mindre skärmar */
-    max-width: none; /* Återställ maxbredd */
-    height: auto; /* Automatisk höjd */
-    margin-top: 5vh; /* Uppdaterad enhet för responsivitet */
-  }
-
-  .home {
-    width: 90%; /* Anpassa bredden för mindre skärmar */
-    max-width: none; /* Återställ maxbredd */
-    margin: 5vh auto; /* Centrera vertikalt och horisontellt */
-  }
-
-  .intro {
-    margin-top: 10vh; /* Uppdaterad enhet för responsivitet */
-  }
+  @media only screen and (max-width: 300px) {
+    /* Stilar som tillämpas när skärmbredden är högst 600px */
+    .topnav {
+        padding: 1vh; /* Uppdaterad enhet för responsivitet */
+    }
   
-  .page {
-    background-color: white;
-    height: 70vh; 
-    margin-left: 20px; /* Adjusted margin for better visibility */
-    background-position: center;
-    width: 100%; /* Adjusted width for better visibility */
-    margin-left: 20 auto; /* Centering horizontally */
-  }
+    .active {
+        font-size: 1.5vh; /* Uppdaterad enhet för responsivitet */
+        padding: 1vh 2vh; /* Uppdaterad enhet för responsivitet */
+    }
 
-  footer { 
-    margin: 2vh;
-  }
+    body {
+        max-width: 100%;
+        height: auto;  
+    }
+
+    .certifications {
+        width: 100%;
+    }
+
+    .profilpic {
+        border: 3px solid #148ebe;
+        border-radius: 50%;
+        margin-left: 200px;
+        width: 70%; 
+    }
 }
-
-        
-          @media only screen and (max-width: 600px) {
-            /* Stilar som tillämpas när skärmbredden är högst 600px */
-          
-            .topnav {
-              padding: 1vh; /* Uppdaterad enhet för responsivitet */
-            }
-          
-            .active {
-              font-size: 1.5vh; /* Uppdaterad enhet för responsivitet */
-              padding: 1vh 2vh; /* Uppdaterad enhet för responsivitet */
-            }
-          }
