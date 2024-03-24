@@ -15,21 +15,23 @@ body {
   src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 }
 
-
+.welcome {
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .topnav {
 
- margin: 30px;
+
     background-color: aliceblue;
     text-align: center;
-    
-   
    justify-content: space-around;
-    margin-top: 3vh; /* Uppdaterad enhet för responsivitet */
-    width: 95%; /* Uppdaterad enhet för responsivitet */
+   
+    width: 100%; /* Uppdaterad enhet för responsivitet */
      box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.884); /* Shadow properties */
-    height: 30vh; /* Uppdaterad enhet för responsivitet */
-    border: 1vh solid #3979a1; /* Uppdaterad enhet för responsivitet */
+    height: 40vh; /* Uppdaterad enhet för responsivitet */
+    border: 2vh solid #148ebe; /* Uppdaterad enhet för responsivitet */
     padding: 2vh; /* Uppdaterad enhet för responsivitet */
 }
     
@@ -73,6 +75,15 @@ body {
     position: sticky;
     top: 0;
   }
+
+    .empty1 {
+      
+      background: rgb(20,142,190);
+      background: radial-gradient(circle, rgba(20,142,190,1) 0%, rgba(70,164,252,1) 100%); 
+                  height: 200px;
+                  
+  }
+  
      
      .name {
       position: static;
@@ -81,12 +92,13 @@ body {
   }
 
      .home {
-      margin-top: 9vh;
+      
+     
       width: 100%; /* Uppdaterad enhet för responsivitet */
       background-color: white;
       text-align: left;
       max-width: 100%; /* Max bredd */
-      height: auto; /* Automatisk höjd */
+      height: 1100px; /* Automatisk höjd */
        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
   }
   .profilpic {
@@ -94,19 +106,6 @@ body {
     margin-right: 1px;
   }
 
-  .github img {
- float: inline-end;
-    margin-top: 17px;
-    height: 85px; /* Minska höjden */
-    width: auto
-  }
-  
-  .facebook img {
-    float: inline-end;
- 
-    height: 120px; /* Minska höjden */
-    width: auto
-  }
 
 
  .arrowdown {
@@ -130,16 +129,31 @@ body {
 
       .profilpic {
       margin-left: 45%;
-   
       border: 5px solid #148ebe;
         border-radius: 50%;
       }
-       
+
+
+
+      .socials {
+        display: flex;
+        align-items: center; /* Align items vertically center */
+      }
+      .facebook {
+        display: flex;
+      }
+
+
+ .email {
+  margin-left: 61%; /* Push the email link to the right */
+}
+
 
         .certifications {
             background-color: white;
            height: 70vh;
-           width: 80%; 
+           width: 100%; 
+           margin-top:  40vh;
           margin-left: auto;
           margin-right: auto;
             background-position: center;
@@ -179,19 +193,39 @@ body {
            
 
             
-           .resumé{
+           .resumé {
             max-width: 100%;
             width: 100%;
-
             height: auto;
             background-color: #ffffff;
+            margin-top: 40vh;
+            text-align: center;
+           }
+
+           .empty2 {
+      
+background: rgb(20,142,190);
+background: radial-gradient(circle, rgba(20,142,190,1) 0%, rgba(70,164,252,1) 100%); 
+            height: 500px;
+            
+           
+           }
+
+           .portfolio {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+          
+          
            }
 
         footer {
-           background-color: #3979a1;
+           background-color: #148ebe;
            width: 100%;
             height: 50px; 
-            
+         
+            color: #f0f0f0;
             padding: 15px;
             text-align: center;
       
