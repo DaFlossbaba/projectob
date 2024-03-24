@@ -19,6 +19,7 @@ body {
   height: 150px;
   margin-left: auto;
   margin-right: auto;
+  filter: drop-shadow(8px 13px 18px rgb(173, 173, 173))
 }
 
 .topnav {
@@ -30,7 +31,7 @@ body {
    justify-content: space-around;
    align-items: center; /* Align items vertically center */
     width: 100%; /* Uppdaterad enhet för responsivitet */
-     box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.884); /* Shadow properties */
+    
     height: 30vh; /* Uppdaterad enhet för responsivitet */
   
     padding: 2vh; /* Uppdaterad enhet för responsivitet */
@@ -41,6 +42,7 @@ body {
   height: 50px;
   font-size: 17px;
     font-weight: 600;
+    filter: drop-shadow(8px 13px 18px rgb(163, 161, 161));
     padding: 1em ;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -84,6 +86,20 @@ body {
                   height: 50px;
                   
   }
+
+  .box {
+    margin-top:50px;
+    text-align: center;
+    color: #f0f0f0;
+    margin-left: 15%;
+    filter: drop-shadow(12px 17px 24px rgb(58, 56, 56));
+    width: fit-content;
+    padding: 5px;
+    border: 4px ;
+    background-clip: border-box;
+    background-color: #148ebe;
+
+  }
   
      
      .name {
@@ -99,12 +115,13 @@ body {
       background-color: white;
       text-align: left;
       max-width: 100%; /* Max bredd */
-      height: 1100px; /* Automatisk höjd */
+      height: 1200px; /* Automatisk höjd */
        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); /* Shadow properties */ 
   }
   .profilpic {
     margin: 9vh;
     margin-right: 1px;
+    filter: drop-shadow(8px 13px 18px rgb(58, 56, 56));
   }
 
 
@@ -133,12 +150,25 @@ body {
       border: 5px solid #148ebe;
         border-radius: 50%;
       }
-
+      .below {
+        margin-left:auto ;
+        margin-right: auto ;
+       
+        border: 8px solid #148ebe;
+        padding: 4px #148ebe;
+        color: #f0f0f0;
+      
+        filter: drop-shadow(8px 13px 18px rgb(58, 56, 56));
+        width: fit-content;
+       
+        background-color: #148ebe;
+      }
 
 
       .socials {
         display: flex;
         align-items: center; /* Align items vertically center */
+        filter: drop-shadow(8px 13px 18px rgb(58, 56, 56));
       }
       .facebook {
         display: flex;
@@ -209,7 +239,7 @@ body {
       
 background: rgb(20,142,190);
 background: radial-gradient(circle, rgba(20,142,190,1) 0%, rgba(70,164,252,1) 100%); 
-            height: 500px;
+            height: 200px;
             
            
            }
