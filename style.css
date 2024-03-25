@@ -107,13 +107,9 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-};
+}
      
-     .name {
-      position: static;
-    margin-left: 15px;
-      text-align: center;
-  }
+
 
      .home {
       
@@ -296,7 +292,7 @@ p {
       
 background: rgb(20,142,190);
 background: radial-gradient(circle, rgba(20,142,190,1) 0%, rgba(70,164,252,1) 100%); 
-            height: 200px;
+            height: 100px;
             
            
            }
