@@ -8,12 +8,12 @@ body {
     background-size: cover;
     width: 100%; 
   height: 40%; 
-    
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-}
+     }
+
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
 
 .welcome {
   height: 150px;
@@ -32,7 +32,7 @@ body {
    align-items: center; /* Align items vertically center */
     width: 100%; /* Uppdaterad enhet för responsivitet */
     
-    height: 30vh; /* Uppdaterad enhet för responsivitet */
+    height: 32vh; /* Uppdaterad enhet för responsivitet */
   
     padding: 2vh; /* Uppdaterad enhet för responsivitet */
 }
@@ -42,7 +42,7 @@ body {
   height: 50px;
   font-size: 17px;
     font-weight: 600;
-    filter: drop-shadow(8px 13px 18px rgb(163, 161, 161));
+    filter: drop-shadow(8px 13px 18px rgb(71, 71, 71));
     padding: 1em ;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -88,19 +88,26 @@ body {
   }
 
   .box {
+    
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
     margin-top:50px;
     text-align: center;
-    color: #f0f0f0;
+    color: #ffffff;
     margin-left: 15%;
     filter: drop-shadow(12px 17px 24px rgb(58, 56, 56));
     width: fit-content;
     padding: 5px;
-    border: 4px ;
+    border: 1px solid black;
     background-clip: border-box;
     background-color: #148ebe;
 
   }
-  
+  .box:hover { 
+  box-shadow: 2px 5px 0 0 rgb(32, 32, 32);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+};
      
      .name {
       position: static;
@@ -124,6 +131,13 @@ body {
     filter: drop-shadow(8px 13px 18px rgb(58, 56, 56));
   }
 
+  .profilpic:hover {
+   
+    transform: rotate(0.5turn);
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+  }
 
 
  .arrowdown {
@@ -153,7 +167,6 @@ body {
       .below {
         margin-left:auto ;
         margin-right: auto ;
-       
         border: 8px solid #148ebe;
         padding: 4px #148ebe;
         color: #f0f0f0;
@@ -164,19 +177,59 @@ body {
         background-color: #148ebe;
       }
 
+      .below:hover {
+        box-shadow: 2px 5px 0 0 rgb(32, 32, 32);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+
 
       .socials {
         display: flex;
         align-items: center; /* Align items vertically center */
         filter: drop-shadow(8px 13px 18px rgb(58, 56, 56));
       }
+
+      .facebook:hover{
+        transform: translateY(-10px) translateX(0px);
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+
       .facebook {
         display: flex;
+      }
+      .github {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      .github:hover {
+        transform: translateY(-10px) translateX(0px);
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
       }
 
 
  .email {
   margin-left: 61%; /* Push the email link to the right */
+}
+
+.email:hover {
+  transform: translateY(-10px) translateX(0px);
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.html:hover, .css:hover {
+  transform: translateY(-10px) translateX(0px);
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 
@@ -208,6 +261,7 @@ body {
             max-width: 400px; /* Limiting maximum width for better readability */
             background-color: #f0f0f0; /* Light gray background color */
             box-shadow: 0 2px 5px black; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
            }
          
         .pdf {
@@ -233,6 +287,9 @@ body {
             background-color: #ffffff;
             margin-top: 40vh;
             text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+
            }
 
            .empty2 {
